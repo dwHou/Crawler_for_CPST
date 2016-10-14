@@ -16,8 +16,11 @@ class HtmlCrawler(object):
         self.url_base = url_base
         self.encoding = encoding
 
-    def handle_content(self, url, url_type='str'):
+    def handle_content(self, http, url, url_type='str'):
         """
+
+        :type http: httplib2.Http()
+        :param http: a http object
 
         :type url: str or list
         :param url: the url of a web-page
@@ -26,7 +29,6 @@ class HtmlCrawler(object):
         :param url_type: point that the type of url: str or list
         :return homepage
         """
-        http = httplib2.Http('.cache')
 
         if url_type == 'list':
             homepage = []
@@ -88,7 +90,8 @@ class HtmlCrawler(object):
                     img.attrs['src'] = self.url_base + img.attrs['src']
                     img_link.append(img.attrs['src'])
 
-            with open('articlex' + str(idx) + '.html', 'w') as f:
+            file_name = 'article_x' + str(idx) + '.html'
+            with open(file_name, 'w') as f:
                 f.write(content)
 
 
