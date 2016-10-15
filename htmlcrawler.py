@@ -53,26 +53,31 @@ class HtmlCrawler(object):
         :return: news list, each element includes title, spam, link
         """
         news_list = re.findall(string=html, pattern=pattern)  # get news list
-        idx = 0  # index of a certain, also a calculator
-        link = ''
+        links = []  # store news' link
+        news_title_spam = []  # store news' title and its spam
 
         # for each news in news_list, we need get some resource of this news
         # such as images related to this news, and the article
         # the structure of news: news[0] -- link to article, news[1] -- title and spam
         for news in news_list:
-            link = self.url_base + news[0]  # get the link to news's page
-        return news_list
+            links.append(self.url_base + news[0])  # get the link to news's page
+            news_title_spam.append(news[1])
+        return links, news_title_spam
 
-    def handle_news_files(self, news_links):
+    def handle_news_files(self, news_links, dir):
         """
 
         :type news_links: a str list
         :param news_links: url oriented to news' page
-        :return: news_files: a news file which file type is HTML,
+        :type dir: str
+        :param dir: the dir used to store news file
+        :return: list, file paths
         :return: images_list: a list whose element is image
         """
-        x_content = self.handle_content(news_links, url_type='list')  # get content of news' page
+        x_content = self.handle_content(http=httplib2.Http(), url=news_links, url_type='list')  # get content of news' page
         idx = 0
+        files_path = []
+        image_links = []
 
         for content in x_content:
             soup = BeautifulSoup(content, 'html.parser')  # use Beautiful to parse the original page
@@ -80,18 +85,26 @@ class HtmlCrawler(object):
 
             article = soup.find('table', class_='right_news_lb')  # get the real article part
             article_fix = article.contents[1]  # fix the real article part
-            img_link = []  # list which used to store the image resource, some links
             images = article_fix.find_all('img')  # find all img tags from fixed article
 
             # get image resource
-            if images is not None:
+            if len(images) > 0:
                 # fix the original link, get the real url to image resource
+                temp = []
                 for img in images:
-                    img.attrs['src'] = self.url_base + img.attrs['src']
-                    img_link.append(img.attrs['src'])
+                    img_link = self.url_base + img.attrs['src']
+                    img.attrs['src'] = img_link
+                    temp.append(img_link)
 
-            file_name = 'article_x' + str(idx) + '.html'
-            with open(file_name, 'w') as f:
-                f.write(content)
+                image_links.append(temp[0])
+            else:
+                image_links.append('')
 
+            file_path = dir + 'article_x' + str(idx) + '.html'
+            files_path.append(file_path)
 
+            with open(file_path, 'wb') as f:
+                f.write(article_fix.prettify('utf-8'))
+            idx += 1
+
+        return files_path, image_links
