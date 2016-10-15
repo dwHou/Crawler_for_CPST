@@ -1,6 +1,5 @@
 import httplib2
 import re
-import pymysql
 from htmlcrawler import HtmlCrawler
 
 # crawler test module
