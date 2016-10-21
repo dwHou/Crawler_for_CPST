@@ -2,7 +2,6 @@ import httplib2
 import re
 from bs4 import BeautifulSoup
 import os
-import base64
 
 
 ENCODING = 'GB2312'
@@ -23,20 +22,20 @@ class HtmlCrawler(object):
         self.http = http
         self.dir_base = dir_base + '/'
 
-    def _to_base64_(self, filename):
-        """Change filename to base64
-
-        :type filename: str
-        :param filename: file name
-        :return: str
-        """
-        return base64.b64decode(filename)
-
     def _handle_save_(self, dir_name, content, files_path, news_title):
+        """Handle saving file at a certain catalog
+
+        :param dir_name: dir name
+        :param content: the file content, must be bytes
+        :param files_path: store file path
+        :param news_title: the origin title of news
+        :return: none
+        """
         if not os.path.exists(dir_name):
             os.makedirs(dir_name, mode=0o777)
 
-        filename = self._to_base64_(news_title)
+        filename = news_title.replace('/', '|')
+        # print(filename)
         file_path = dir_name + filename + '.html'
         files_path.append(file_path)
 
@@ -48,9 +47,8 @@ class HtmlCrawler(object):
 
         :type url: str or list
         :param url: the url of a web-page
-        :return homepage
+        :return homepage, str
         """
-
         response, content = self.http.request(url)
         content = content.decode(self.encoding, 'ignore')
         return content
@@ -71,7 +69,8 @@ class HtmlCrawler(object):
         news_list = re.findall(string=html, pattern=pattern)  # get news list
         links = []  # store news' link
         news_spam = []  # store news' title and its spam
-        spam_pattern = re.compile(pattern='[0-9]{4}/[0-9]{1,2}/[0-9]{1,2} [0-9]{1,2}:[0-9]{2}:[0-9]{2}')
+        # 2016/(0)9/(0)1 (0)1:
+        spam_pattern = re.compile(pattern='[0-9]{4}/[0-9]{1,2}/[0-9]{1,2} [0-9]{1,2}:[0-9]{1,2}:[0-9]{1,2}')
 
         for news in news_list:
             links.append(self.url_base + news[0])  # get the link to news's page
@@ -98,7 +97,6 @@ class HtmlCrawler(object):
             soup = BeautifulSoup(content, 'html.parser')  # use Beautiful to parse the original page
             if soup.title:
                 news_title = soup.title.string
-
                 article = soup.find('table', class_='right_news_lb')  # get the real article part
                 article_fix = article.contents[1]  # fix the real article part
                 images = article_fix.find_all('img')  # find all img tags from fixed article
@@ -117,19 +115,18 @@ class HtmlCrawler(object):
 
                 self._handle_save_(dir_name, article_fix.prettify('utf-8'), files_path, news_title)
             else:
-                # print('-->No String!: {0}, will solve..'.format(news_links[idx]))
                 redirect_pattern = re.compile('href=\'(.*?)\'')
                 redirect_url = re.findall(string=content, pattern=redirect_pattern)[0]
-                try:
-                    r, c = self.http.request(redirect_url)
-                    c = c.decode('gb2312', 'ignore')
-                    soup2 = BeautifulSoup(c, 'html.parser')
+                r, c = self.http.request(redirect_url)
+                c = c.decode('gb2312', 'ignore')
+                soup2 = BeautifulSoup(c, 'html.parser')
+                if soup2.title:
                     news_title = soup2.title.string
-                    self._handle_save_(dir_name, c, files_path, news_title)
-                except:
-                    # print('-->Read time out at: {0}'.format(redirect_url))
-                    c1 = '<h1 style=\"text-align: center\">对不起！您访问的链接已损坏，或者需要校园网访问！</h1>'
-                    c2 = '<a style=\"text-align: center; display: block\" href=\"' + redirect_url + '\">确定接入校园网后，点击此处访问</a>'
-                    self._handle_save_(dir_name, (c1 + c2).encode(), files_path, 'Inner News')
+                else:
+                    news_title = 'Inner News'
+                c1 = '<h1 style=\"text-align: center\">对不起！您访问的链接已损坏，或者需要校园网访问！</h1>'
+                c2 = '<a style=\"text-align: center; display: block\" href=\"' + redirect_url + '\">确定接入校园网后，点击此处访问</a>'
+                self._handle_save_(dir_name, (c1 + c2).encode(), files_path, news_title)
+                title_and_img.append((news_title, ''))
 
         return files_path, title_and_img
