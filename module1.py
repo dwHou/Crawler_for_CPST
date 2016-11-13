@@ -1,7 +1,7 @@
 import re
 import math
 import httplib2
-import MySQLdb
+import pymysql
 import threading
 from htmlcrawler import HtmlCrawler
 
@@ -10,16 +10,16 @@ from htmlcrawler import HtmlCrawler
 url_links = {
     'news': 'http://physics.scu.edu.cn/News/index.asp?ClassID=3',
     'notice': 'http://physics.scu.edu.cn/News/index.asp?ClassID=1',
-    'recruit': 'http://physics.scu.edu.cn/News/index.asp?ClassID=16',
-    'employment': 'http://physics.scu.edu.cn/News/index.asp?ClassID=15',
-    'science': 'http://physics.scu.edu.cn/News/index.asp?ClassID=2'
+    # 'recruit': 'http://physics.scu.edu.cn/News/index.asp?ClassID=16',
+    # 'employment': 'http://physics.scu.edu.cn/News/index.asp?ClassID=15',
+    # 'science': 'http://physics.scu.edu.cn/News/index.asp?ClassID=2'
 }
 
 
 url_base = 'http://physics.scu.edu.cn'  # to get image sources
 pattern = '<a href=\"(/News/news_show\.asp\?ArticleID=[0-9]+)\" title=\"(.*?)\">'  # pattern used to get news_list
 
-conn = MySQLdb.connect('localhost', 'root', '961727', 'crawler', charset='utf8', use_unicode=True)
+conn = pymysql.connect('localhost', 'root', '961727', 'crawler', charset='utf8', use_unicode=True)
 cursor = conn.cursor()
 sql = 'insert into article(news_title, news_date, news_url, img_url, label) values(%s, %s, %s, %s, %s)'
 

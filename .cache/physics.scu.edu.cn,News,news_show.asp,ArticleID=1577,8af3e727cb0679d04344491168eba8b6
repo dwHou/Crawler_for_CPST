@@ -1,0 +1,444 @@
+status: 200
+-content-encoding: gzip
+server: Microsoft-IIS/8.5
+vary: Accept-Encoding
+cache-control: private
+date: Sun, 13 Nov 2016 05:49:14 GMT
+x-powered-by: ASP.NET
+set-cookie: Editor%5FuploadDir=uploadfiles; path=/, InstallDir=%2F; path=/, ASPSESSIONIDAQAAABTT=IMLGGALDJEDLOHPNPNMLOMEM; path=/
+content-location: http://physics.scu.edu.cn/News/news_show.asp?ArticleID=1577
+content-type: text/html
+content-length: 20440
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>四川大学物理学院2016年接收推荐免试攻读硕士学位研究生章程</title>
+<meta name="Keywords" content="招生章程" />
+<meta name="Description" content="物理科学与技术学院位于望江校区，是四川大学规模最大和办学历史最悠久的学院之一，由原四川大学的物理系和原子核科学技术研究所（720所）、原成都科技大学的应用物理系和原子与分子物理研究所以及原华西医科大学的华…" />
+<link href="/template/Style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<SCRIPT language=javascript type=text/javascript>
+	//<![CDATA[
+	function showsub_a(id)
+	{
+		for (i = 0;i<=9;i++)
+		{
+			document.getElementById("tab_a"+i).className = "dh_t_1";
+			document.getElementById("sub_a"+i).style.display = "none";
+		}
+			document.getElementById("tab_a"+id).className = "dh_t_2";
+			document.getElementById("sub_a"+id).style.display = "";
+	}
+	//]]>
+</SCRIPT>
+<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0" class="top_1">
+  <tr>
+    <td width="41"><img src="/template/Default/images/top_01.jpg" width="41" height="29" /></td>
+    <td width="133" class="top_1_1">今天是<SCRIPT src="/JS/date.js" type=text/javascript></SCRIPT></td>
+    <td width="623" class="top_1_2"><marquee behavior="scroll" direction="left" scrollamount="2" scrolldelay="1">&nbsp;&nbsp;没有公告</marquee></td>
+    <td width="206" align="center" class="top_1_3"><a style="cursor:pointer;" onclick="this.style.behavior='url(#default#homepage)';this.sethomepage(window.location.toString())" >设为首页</a> | <a style="cursor:pointer;" onclick="window.external.AddFavorite(location.href,document.title)">加入收藏</a> | <a href="/contact.asp">联系我们</a></td>
+  </tr>
+</table>
+<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><img src="/template/Default/images/top_05.jpg" width="531" height="126" /></td>
+    <td><img src="/template/Default/images/top_06.jpg" width="310" height="126" /></td>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><img src="/template/Default/images/top_07.jpg" width="162" height="11" /></td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><a href="/"><img src="/template/Default/images/top_08.jpg" width="76" height="26" border="0" /></a></td>
+            <td><a href="/eng/"><img src="/template/Default/images/top_09.jpg" width="86" height="26" border="0" /></a></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><img src="/template/Default/images/top_10.jpg" width="162" height="89" /></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0" class="dh">
+  <tr>
+    <td width="13"><img src="/template/Default/images/top_11.jpg" width="13" height="34" /></td>
+    <td width="976" align="center" valign="bottom">
+	<ul class="dh_t">
+	<li class="dh_t_1"  onMouseOver="this.className='dh_t_2'" onMouseOut="this.className='dh_t_1'"><a href="/index.asp">网站首页</a></li>
+	<li>|</li>
+	<li class="dh_t_1" id="tab_a0" onMouseOver="showsub_a(0);"><a href="/about.asp">学院概况</a></li>
+	<li>|</li>
+	<li class="dh_t_1"  id="tab_a2" onMouseOver="showsub_a(2)"><a href="/bkjy/">本科教育</a></li>
+	<li>|</li>
+	<li class="dh_t_1"  id="tab_a3" onMouseOver="showsub_a(3)"><a href="/yjsjy/">研究生教育</a></li>
+	<li>|</li>
+	<li class="dh_t_1" id="tab_a1" onMouseOver="showsub_a(1)"><a href="/kxyj.asp">科学研究</a></li>
+	<li>|</li>
+	<li class="dh_t_1"  id="tab_a4" onMouseOver="showsub_a(4)"><a href="/xkjs/">学科建设</a></li>
+	<li>|</li>
+	<li class="dh_t_1"  id="tab_a5" onMouseOver="showsub_a(5)"><a href="/team/">师资队伍</a></li>
+	<li>|</li>
+	<li class="dh_t_1"  id="tab_a6" onMouseOver="showsub_a(6)"><a href="/djxx/">党建信息</a></li>
+	<li>|</li>
+	<li class="dh_t_1"  id="tab_a7" onMouseOver="showsub_a(7)"><a href="/dwjl/">对外交流</a></li>
+	<li>|</li>
+	<li class="dh_t_1"  id="tab_a8" onMouseOver="showsub_a(8)"><a href="/xybg/">院务信息</a></li>
+	<li>|</li>
+	<li class="dh_t_1" onMouseOver="this.className='dh_t_2'" onMouseOut="this.className='dh_t_1'">
+	<a href="../../phystu/Index.asp">学生工作</a></li>
+	<li>|</li>
+	<li class="dh_t_1"  id="tab_a9" onMouseOver="showsub_a(9)"><a href="/jcxy/index.asp?ClassID=37">校友动态</a></li>
+	</ul>
+	</td>
+    <td width="14" align="right"><img src="/template/Default/images/top_14.jpg" width="14" height="34" /></td>
+  </tr>
+</table>
+<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0" class="dh2">
+  <tr>
+    <td>
+	<ul class="dh2_t" id="sub_a0" style="display:block;">
+	<li>|</li>
+	
+	<li><a href="/about.asp?ID=7">历史沿革</a></li>
+	<li>|</li>
+	
+	<li><a href="/about.asp?ID=1">学院介绍</a></li>
+	<li>|</li>
+	
+	<li><a href="/about.asp?ID=2">组织机构</a></li>
+	<li>|</li>
+	
+	<li><a href="/about.asp?ID=9">各系及中心</a></li>
+	<li>|</li>
+	  
+	</ul>
+	<ul class="dh2_t" id="sub_a1" style="display:none;"><!--科学研究-->
+	<li>|</li>
+	
+	<li><a href="/kxyj.asp?ID=4">研究基地</a></li>
+	<li>|</li>
+	
+	<li><a href="/kxyj.asp?ID=3">科研成果</a></li>
+	<li>|</li>
+	
+	<li><a href="/kxyj.asp?ID=6">学术刊物</a></li>
+	<li>|</li>
+	
+	<li><a href="/kxyj.asp?ID=10">科研方向</a></li>
+	<li>|</li>
+	  
+	</ul>
+	<ul class="dh2_t" id="sub_a2" style="display:none;"><!--本科教育-->
+	<li>|</li>
+	 
+	<li><a href="/bkjy/index.asp?ClassID=18">专业情况</a></li>
+	<li>|</li>
+	 
+	<li><a href="/bkjy/index.asp?ClassID=19">本科课程</a></li>
+	<li>|</li>
+	 
+	<li><a href="/bkjy/index.asp?ClassID=20">师资状况</a></li>
+	<li>|</li>
+	 
+	<li><a href="/bkjy/index.asp?ClassID=21">教学效果</a></li>
+	<li>|</li>
+	 
+	</ul>
+	<ul class="dh2_t" id="sub_a3" style="display:none;"> <!--研究生教育-->
+	<li>|</li>
+	
+	<li><a href="/yjsjy/index.asp?ClassID=23">硕士专业</a></li>
+	<li>|</li>
+	
+	<li><a href="/yjsjy/index.asp?ClassID=24">博士专业</a></li>
+	<li>|</li>
+	 
+	</ul>
+	<ul class="dh2_t" id="sub_a4" style="display:none;"><!--学科建设-->
+	<li>|</li>
+	
+	<li><a href="/xkjs/index.asp?ClassID=36">国家重点学科</a></li>
+	<li>|</li>
+	
+	<li><a href="/xkjs/index.asp?ClassID=42">教育部重点实验室</a></li>
+	<li>|</li>
+	
+	<li><a href="/xkjs/index.asp?ClassID=43">四川省重点学科</a></li>
+	<li>|</li>
+	 
+	</ul>
+	<ul class="dh2_t" id="sub_a5" style="display:none;"><!--师资队伍-->
+	<li>|</li>
+	
+	<li><a href="/team/index.asp?ClassID=28">院士</a></li>
+	<li>|</li>
+	
+	<li><a href="/team/index.asp?ClassID=29">教授</a></li>
+	<li>|</li>
+	
+	<li><a href="/team/index.asp?ClassID=30">副教授</a></li>
+	<li>|</li>
+	
+	<li><a href="/team/index.asp?ClassID=31">其他</a></li>
+	<li>|</li>
+	 
+	</ul>
+	<ul class="dh2_t" id="sub_a6" style="display:none;"><!--党建信息-->
+	<li>|</li>
+	
+	<li><a href="/djxx/index.asp?ClassID=39">党员发展</a></li>
+	<li>|</li>
+	
+	<li><a href="/djxx/index.asp?ClassID=40">党员转正</a></li>
+	<li>|</li>
+	
+	<li><a href="/djxx/index.asp?ClassID=44">组织生活与政治学习</a></li>
+	<li>|</li>
+	
+	<li><a href="/djxx/index.asp?ClassID=46">党风廉政建设</a></li>
+	<li>|</li>
+	 
+	</ul>
+	<ul class="dh2_t" id="sub_a7" style="display:none;"><!--对外交流-->
+	<li>|</li>
+	
+	<li><a href="/dwjl/dwjl_show.asp?ArticleID=189">成都市物理学会</a></li>
+	<li>|</li>
+	
+	<li><a href="/dwjl/dwjl_show.asp?ArticleID=10">四川省物理学会</a></li>
+	<li>|</li>
+	
+	</ul>
+	<ul class="dh2_t" id="sub_a8" style="display:none;"><!--学院办公-->
+	<li>|</li>
+	
+	<li><a href="/xybg/index.asp?ClassID=32">办公纪要</a></li>
+	<li>|</li>
+	
+	<li><a href="/xybg/index.asp?ClassID=33">学院公文</a></li>
+	<li>|</li>
+	
+	<li><a href="/xybg/index.asp?ClassID=34">学院简报</a></li>
+	<li>|</li>
+	
+	<li><a href="/xybg/index.asp?ClassID=35">总结与计划</a></li>
+	<li>|</li>
+	 
+	</ul>
+	<ul class="dh2_t" id="sub_a9" style="display:none;"><!--校友动态 -->
+	<li>|</li>
+	
+	<li><a href="/jcxy/index.asp?ClassID=37">杰出校友</a></li>
+	<li>|</li>
+	
+	<li><a href="/jcxy/index.asp?ClassID=38">校友信息</a></li>
+	<li>|</li>
+	 
+	</ul>
+	</td>
+  </tr>
+</table>
+
+<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td align="center"><table width="98%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="19%" valign="top"><table width="88%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><img src="/template/Default/images/news_23.jpg" width="182" height="45" /></td>
+          </tr>
+          <tr>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+			
+              <tr>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0" class="left_dh">
+                  <tr>
+                    <td width="10%"><img src="/template/Default/images/jt_27.jpg"/></td>
+                    <td width="90%" align="left"><a href="/News/index.asp?ClassID=3">学院新闻</a></td>
+                  </tr>
+                </table></td>
+              </tr>
+			 
+              <tr>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0" class="left_dh">
+                  <tr>
+                    <td width="10%"><img src="/template/Default/images/jt_27.jpg"/></td>
+                    <td width="90%" align="left"><a href="/News/index.asp?ClassID=1">学院公告</a></td>
+                  </tr>
+                </table></td>
+              </tr>
+			 
+              <tr>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0" class="left_dh">
+                  <tr>
+                    <td width="10%"><img src="/template/Default/images/jt_27.jpg"/></td>
+                    <td width="90%" align="left"><a href="/News/index.asp?ClassID=2">学术看板</a></td>
+                  </tr>
+                </table></td>
+              </tr>
+			 
+              <tr>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0" class="left_dh">
+                  <tr>
+                    <td width="10%"><img src="/template/Default/images/jt_27.jpg"/></td>
+                    <td width="90%" align="left"><a href="/News/index.asp?ClassID=15">就业信息</a></td>
+                  </tr>
+                </table></td>
+              </tr>
+			 
+              <tr>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0" class="left_dh">
+                  <tr>
+                    <td width="10%"><img src="/template/Default/images/jt_27.jpg"/></td>
+                    <td width="90%" align="left"><a href="/News/index.asp?ClassID=16">招生信息</a></td>
+                  </tr>
+                </table></td>
+              </tr>
+			 
+              <tr>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0" class="left_dh">
+                  <tr>
+                    <td width="10%"><img src="/template/Default/images/jt_27.jpg"/></td>
+                    <td width="90%" align="left"><a href="/soft/">下载中心</a></td>
+                  </tr>
+                </table></td>
+              </tr>
+			 
+              <tr>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0" class="left_dh">
+                  <tr>
+                    <td width="10%"><img src="/template/Default/images/jt_27.jpg"/></td>
+                    <td width="90%" align="left"><a href="/News/index.asp?ClassID=45">廉政建设</a></td>
+                  </tr>
+                </table></td>
+              </tr>
+			  
+            </table></td>
+          </tr>
+        </table></td>
+		<td width="3%" valign="top"><img src="/template/Default/images/ny_24.jpg" width="28" height="465" /></td>
+        <td width="78%" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="4%" align="left"><img src="/template/Default/images/n_28.jpg" width="24" height="23" /></td>
+            <td width="96%" align="left"><span class="dqwz">您当前位置：</span><a href='/'>网站首页</a>&nbsp;&gt;&gt;&nbsp;<a href="/News/index.asp">新闻中心</a>&nbsp;&gt;&gt;&nbsp;<a href='/dwjl/index.asp?ClassID=16'>招生信息</a>&nbsp;&gt;&gt;&nbsp;详细内容</td>
+          </tr>
+        </table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="right_c">
+		  <tr>
+			<td align="left">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" class="right_news_lb">
+				<tr>
+				  <td>
+				  <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+					  <td height="40" align="center" valign="middle" class="newsbt"><p>四川大学物理学院2016年接收推荐免试攻读硕士学位研究生章程</p></td>
+					</tr>
+				  </table>
+				<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0" class="boder_b">
+				  <tr>
+					<td height="30" align="center">来源: 本站原创 &nbsp;&nbsp;&nbsp;作者:manager &nbsp;&nbsp;发布时间:2015/9/29 17:08:31</td>
+				  </tr>
+				</table>
+				<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+				  <tr>
+					<td align="left" valign="top" class="art_content">    物理科学与技术学院位于望江校区，是四川大学规模最大和办学历史最悠久的学院之一，由原四川大学的物理系和原子核科学技术研究所（720所）、原成都科技大学的应用物理系和原子与分子物理研究所以及原华西医科大学的华西基础医学物理教研室于2001年7月合并组建而成。其中，原四川大学物理系正式建立于1926年，已有八十余年历史。四川大学的物理学科不仅具有雄厚的教学、科研实力，还先后孕育、发展出了学校的无线电电子学、光电技术和材料科学等学科，为学校的发展做出了重大贡献，也为国家培养了大量杰出人才，其中包括4位院士。四川大学核科学学科和微电子学科创立于上世纪五十年代，是全国最早拥有这些学科的少数高校之一。2007年四川大学与成都市人民政府、中国核工业集团公司签订了“三方共建四川大学核科学与工程技术学院”的协议，由此组建了核科学与工程技术学院。
+现设有两个相对独立的研究所（原子核科学技术研究所和原子与分子物理研究所）、三个系（物理学系、核工程与核技术系、微电子学系）和两个教学中心（基础物理教学中心和基础物理实验教学中心）。
+现有在职教职工202名，其中院士2人，特聘和兼职院士4人，博士生导师36人，教授（研究员）52人，副教授（副研究员）60人；教育部长江学者特聘教授1人，国家中青年科技创新领军人才1人，新世纪百千万人才工程国家级人选1人，中组部青年千人计划1名；国务院学位委员会物理学与天文学学科评议组成员1人，教育部教学指导委员会委员3人，四川省学术和技术带头人14人，教育部新世纪优秀人才9名，四川大学高端外籍教授3人。
+2016年，本院不含两个所（教学口）计划招收硕士研究生50名，其中预计接收推荐免试研究生25名。接收推免生章程如下：
+一、申请条件
+1.拥护中国共产党的领导，愿为社会主义现代化建设服务，身体健康，品德良好，遵纪守法。
+2.应届本科毕业生且获得本人所在学校的推荐免试资格。
+3.顺利毕业并获得学士学位。
+二、接收专业、人数
+专业、人数等详情请查阅《四川大学2016年接收推荐免试攻读硕士学位研究生专业目录》。
+三、申请、复试、录取程序
+1. 9月28日左右开始，获得推免生资格且符合申请条件者在中国研究生招生信息网（以下简称研招网）“推免服务系统”填报专业志愿。网址:http://yz.chsi.com.cn/tm。
+2. 在“推免服务系统”获悉填报专业志愿信息后，学校2个工作日内通过研招网“推免服务系统”向申请考生发出复试通知。考生接到复试通知并确认后，学校相关招生单位尽快进行复试。
+3. 考生需交验以下书面材料：
+（1）学生证、第二代身份证复印件；
+（2）其他各种能力证明材料（如大学英语四、六级考试成绩单、获奖证书、本人代表性学术论文、出版物或原创性工作成果等）复印件；
+（3）由政府设立的二级甲等以上医院或四川大学校医院出具的体检报告。
+以上材料交验可以与复试同时进行。
+4. 10月初起，复试合格者在研招网“推免服务系统”及时点击待录取通知并领取推免生接收函。此前，校内各招生单位将拟录取名单报学校研究生招生办公室审核。
+四、奖助学金
+   四川大学研究生奖助体系完备，由国家奖助金和学校奖助金两部分构成。国家奖助金包括国家奖学金和国家助学金，学校奖助金包括学校学业奖学金和学校“三助”岗位津贴。具体情况请详见《四川大学研究生奖助体系实施方案》（http://gs.scu.edu.cn/newDetail.aspx?ID=1951）。
+五、咨询、联系方式
+四川大学物理学院教务办公室黄老师  电话：85415561  
+Email：scuxiaoy@scu.edu.cn
+
+六、举报受理渠道 
+物理科学与技术学院党委办公室：02885412323；
+七、其他事项
+1. 申请人必须保证所提交申请材料的真实性和准确性。若申请人提交的信息不真实或不准确，不予录取。
+2. 在入学报到时未获得毕业证书及学士学位证书者，学校将取消其录取资格。
+3. 申请人目录查询、信息注册、上传照片、缴费、填报志愿、接收复试和待录取等都在“推免服务系统”上进行，拟录取考生不再领取校验码、登记表，不再进行现场确认。
+
+
+                     四川大学物理学院
+                     二〇一五年九月二十
+</td>
+				  </tr>
+				</table>
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				  <tr>
+					<td height="30" class="next_prev"><li>上一篇新闻： <a href='/News/news_show.asp?ArticleID=1503' title='新闻标题：2015年高层次人才招聘启事
+更新时间：2015/5/28 16:20:38'>2015年高层次人才招聘启事</a></li><li>下一篇新闻： <a href='/News/news_show.asp?ArticleID=1873' title='新闻标题：四川大学物理学院2017年接收推荐免试攻读硕士学位研究生章程
+更新时间：2016/9/19 11:21:57'>四川大学物理学院2017年接收推荐免试攻…</a></li></td>
+				  </tr>
+				</table>
+				  </td>
+				</tr>
+			  </table>
+			</td>
+		  </tr>
+		</table>
+
+		</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+
+<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0" class="m_t">
+      <tr>
+        <td width="1%"><img src="/template/Default/images/bottom_dh_91.jpg" width="13" height="32" /></td>
+        <td width="98%" align="center" class="bottom_dh"><a href="/news/">新闻中心</a> | <a href="/soft/">下载中心</a> | <a href="/news/index.asp?ClassID=15">就业信息</a> | <a href="/news/index.asp?ClassID=16">招生信息</a> | <a href="/about.asp">学院介绍</a> | <a href="/bkjy/">本科教育</a> | <a href="/yjsjy/">研究生教育</a> | <a href="/xkjs/">学科建设</a> | <a href="/team/">师资队伍</a> | <a href="/djxx/">党建信息</a> | <a href="/xybg/">学院办公</a> | <a href="#">学生工作</a> | <a href="/contact.asp">联系我们</a></td>
+        <td width="1%" align="right"><img src="/template/Default/images/bottom_dh_95.jpg" width="10" height="32" /></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0" class="m_t">
+      <tr>
+        <td class="yqlj"><span style="color:#621E27">友情链接：</span><a href="http://www.scu.edu.cn/" target="_blank" title="">&nbsp;四川大学</a>&nbsp;<a href="http://www.scu.edu.cn/portal/xxkk/kk/webinfo/2008/05/1210143296583682.htm" target="_blank" title="">&nbsp;校内各部处电话</a>&nbsp;<a href="http://www.scu.edu.cn/portal/gbclink/H6019index_1.htm" target="_blank" title="">&nbsp;校内各部处链接</a>&nbsp;<a href="http://www.scu.edu.cn/portal/colleges/H6020index_1.htm" target="_blank" title="">&nbsp;校内各学院链接</a>&nbsp;<a href="http://physics.scu.edu.cn/scphy/index.asp" target="_blank" title="">&nbsp;四川省物理学会</a>&nbsp;<a href="http://www.07vi.com" target="_blank" title="">&nbsp;网站建设公司</a>&nbsp;<a href="http://www.nsfc.gov.cn/Portal0/default124.htm" target="_blank" title="">&nbsp;国家自然科学基金委员会</a>&nbsp;<a href="http://www.moe.gov.cn/" target="_blank" title="">&nbsp;国家教育部</a>&nbsp;<a href="http://www.most.gov.cn/" target="_blank" title="">&nbsp;国家科学技术部</a>&nbsp;
+		
+		</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0" class="m_t">
+      <tr>
+        <td width="33%" align="right"><img src="/template/Default/images/logo_b_99.jpg" width="88" height="79" /></td>
+		<td width="67%">2009-2010 &copy; 版权所有：四川大学物理科学与技术学院（四川大学核科学与工程技术学院） <br />
+		  通讯地址： 四川省成都市九眼桥望江路29号   邮政编码：610064 <br />
+		   电话： 028-85412322(行政)85412323(党办)85415561(教务)85410030(学工)</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>
